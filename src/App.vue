@@ -1,14 +1,17 @@
 <template>
-<BindStyle />
+<!-- <BindStyle /> -->
+<Methods />
 </template>
 
 <script>
-import BindStyle from './components/BindStyle.vue'
+// import BindStyle from './components/BindStyle.vue'
+import Methods from './components/Methods.vue'
 
 export default {
   name: 'App',
   components: {
-    BindStyle,
+    // BindStyle,
+    Methods,
   }
 }
 </script>
