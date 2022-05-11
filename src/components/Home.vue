@@ -9,6 +9,19 @@
 <p v-bind:class="isLogin && 'login'">Login class</p>
 <p v-bind:class="isLogin ? 'login': 'logout'">Login/Logout</p>
 <p v-bind:class="[isLogin && 'class1', 'class2']">Array classes</p>
+<p v-bind:style="{
+    color: 'red',
+    fontSize: '20px'
+}">Style added inline</p>
+
+<p v-bind:style="{
+    color: 'red',
+    'font-size': '30px'
+}">Style added inline</p>
+
+<p v-bind:style="styleObj1">Style obj used</p>
+<p v-bind:style="styleObj1">Style multiple obj used</p>
+<p v-bind:style="[styleObj1, styleObj2]">Style multiple obj used</p>
 </template>
 <script>
 export default{
@@ -21,7 +34,13 @@ export default{
             headingID: 'Header-id',
             flag: true,
             active: 'active-class',
-            isLogin: false
+            isLogin: false,
+            styleObj1: {
+                 color: 'red'
+            },
+            styleObj2: {
+                    'font-size': '30px'
+            }
 
 
         }
