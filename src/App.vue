@@ -1,14 +1,14 @@
 <template>
-<Home />
+<BindStyle />
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import BindStyle from './components/BindStyle.vue'
 
 export default {
   name: 'App',
   components: {
-    Home,
+    BindStyle,
   }
 }
 </script>
