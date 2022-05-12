@@ -1,17 +1,20 @@
 <template>
 <!-- <BindStyle /> -->
-<Methods />
+<!-- <Methods /> -->
+<IfElseFor />
 </template>
 
 <script>
 // import BindStyle from './components/BindStyle.vue'
-import Methods from './components/Methods.vue'
+// import Methods from './components/Methods.vue'
+import IfElseFor from './components/IfElseFor.vue'
 
 export default {
   name: 'App',
   components: {
     // BindStyle,
-    Methods,
+    // Methods,
+    IfElseFor,
   }
 }
 </script>
