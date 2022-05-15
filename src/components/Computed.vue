@@ -6,7 +6,14 @@
         <h2>Computed Property</h2>
         <h3>{{fullName}}</h3>
 
-        <button @click="setName('Happy Singh')">change name</button>
+        <button @click="setName('Happy Singh')">change name</button>    
+            <!-- <p> 
+                v directives 
+                v-pre
+                v-show
+                V-once
+                v-html
+                </p> -->
     </div>
 </template>
 
