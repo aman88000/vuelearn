@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>Watcher used in vue js and its properties like immediate and deep</h1>
-    <h2>{{name}}</h2>
+    <h2>{{formData.name}}</h2>
     <button @click="changeName">Change name</button>
 </div>
 </template>
@@ -11,20 +11,24 @@ export default {
     name: 'WatchersVue',
     data() {
         return {
-            name: 'aman'
+            formData: {
+
+                name: 'aman'
+            }
         }
     },
     methods: {
         changeName() {
-            this.name = 'Deep'
+            this.formData.name = 'Deep'
         }
     },
     watch: {
-        name: {
+        formData: {
             handler(currValue, preValue) {
                 console.log('called', currValue, preValue)
             },
-            immediate: true
+            immediate: true,
+            deep: true
         }
 
     }
