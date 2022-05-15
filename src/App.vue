@@ -2,14 +2,16 @@
 <!-- <BindStyle /> -->
 <!-- <Methods /> -->
 <!-- <IfElseFor /> -->
-<Parent />
+<!-- <Parent /> -->
+<FormVue />
 </template>
 
 <script>
 // import BindStyle from './components/BindStyle.vue'
 // import Methods from './components/Methods.vue'
 // import IfElseFor from './components/IfElseFor.vue'
-import Parent from "./components/props/Parent.vue"
+// import Parent from "./components/props/Parent.vue"
+import FormVue from "./components/Form/Form.vue"
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
     // BindStyle,
     // Methods,
     // IfElseFor,
-    Parent,
+    // Parent,
+    FormVue
   }
 }
 </script>
