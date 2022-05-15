@@ -3,7 +3,8 @@
 <!-- <Methods /> -->
 <!-- <IfElseFor /> -->
 <!-- <Parent /> -->
-<FormVue />
+<!-- <FormVue /> -->
+<Computed />
 </template>
 
 <script>
@@ -11,7 +12,8 @@
 // import Methods from './components/Methods.vue'
 // import IfElseFor from './components/IfElseFor.vue'
 // import Parent from "./components/props/Parent.vue"
-import FormVue from "./components/Form/Form.vue"
+// import FormVue from "./components/Form/Form.vue"
+import Computed from "./components/Computed.vue"
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     // Methods,
     // IfElseFor,
     // Parent,
-    FormVue
+    // FormVue,
+    Computed,
   }
 }
 </script>
