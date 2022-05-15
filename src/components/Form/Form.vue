@@ -2,8 +2,8 @@
     <div>
         <h2>Form vue js</h2>
         <h3>{{fromData}}</h3>
-        <form @submit="fromSubmit">
-            <label>Name: </label><input type="text"  v-model="fromData.name"/>  <br /><br />
+        <form @submit.prevent="fromSubmit">
+            <label>Name: </label><input type="text"  v-model.trim.lazy="fromData.name"/>  <br /><br />
             <label>Status: </label>
             <select v-model="fromData.status">
                 <option>yes</option>
@@ -30,8 +30,8 @@
             }
         },
         methods: {
-            fromSubmit(e){
-                e.preventDefault();
+            fromSubmit(){
+             //   e.preventDefault();
                 console.log(this.fromData)
             }
         }
