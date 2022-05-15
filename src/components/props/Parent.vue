@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>Props Parent Component vue js </h2>
-        <ChildVue msg="From Parent static msg" :title="title"  v-on:changeTitle="updateTitle($event)"/>
+        <ChildVue id="childID" msg="From Parent static msg" :title="title"  v-on:changeTitle="updateTitle($event)"/>
     </div>
 </template>
 
